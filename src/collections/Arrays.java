@@ -50,7 +50,23 @@ public class Arrays {
 			System.out.print(num+" ");
 		}
 		System.out.println();
-
+		// find middle element and remove it
+		System.out.println("Removing middle element: " + list3.get(list3.size()/2));
+		list3.remove(list3.size()/2);
+		
+		for(Integer num: list3){
+			System.out.print(num+" ");
+		}
+		System.out.println();
+		
+		System.out.println("Reversing ArrayList3: ");
+		Collections.reverse(list3);
+		System.out.println("Final ArrayList3 size: " + list3.size());
+		System.out.print("Final ArrayList3: ");
+		for(Integer num: list3){
+			System.out.print(num+" ");
+		}
+		System.out.println();
 		
 	}
 	
