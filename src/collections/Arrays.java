@@ -1,7 +1,10 @@
 package collections;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.Random;
+import java.util.Set;
 
 public class Arrays {
 
@@ -32,6 +35,23 @@ public class Arrays {
 			System.out.print(num+" ");
 		}
 		System.out.println();
+		
+		// add all of list2 to list1 and sort
+		list1.addAll(list2);
+		Collections.sort(list1);
+
+		// add list1 to a set first so there are no duplicates
+		Set<Integer> set = new HashSet<Integer>(list1);
+		ArrayList<Integer> list3 = new ArrayList<Integer>(set);
+		
+		System.out.println("ArrayList3 size: " + list3.size());
+		System.out.print("ArrayList3: ");
+		for(Integer num: list3){
+			System.out.print(num+" ");
+		}
+		System.out.println();
+
+		
 	}
 	
 }
